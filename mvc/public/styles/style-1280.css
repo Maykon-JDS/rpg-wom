@@ -1,0 +1,11 @@
+/* Tela 1280x720 */
+
+@media (max-width: 1280px) {
+    .row-main .titulo {
+        font-size: 35px;
+    }
+
+    .box-opcoes a {
+        font-size: 12px;
+    }
+}

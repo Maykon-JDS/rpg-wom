@@ -1,0 +1,27 @@
+/* Tela 1366x768 */
+
+@media (max-width: 1366px) {
+    .row-main .titulo.page-404 {
+        font-size: 4.5rem;
+    }
+
+    h2.page-404 {
+        font-size: 1.8rem;
+    }
+
+    .row-main .titulo {
+        font-size: 40px;
+    }
+
+    .box-opcoes {
+        gap: 5px !important;
+    }
+
+    .box-opcoes a {
+        font-size: 14px;
+    }
+
+    .options {
+        gap: 15px;
+    }
+}
