@@ -3,7 +3,7 @@
 namespace App\Classes;
 
 use App\Models\UserMestreModel;
-use App\Models\UserPersonagemModel;
+use App\Models\UserJogadorModel;
 use Illuminate\Support\Str;
 
 class Database
@@ -26,7 +26,7 @@ class Database
         $database->save();
     } 
 
-    static private function getUserByEmail($request, $accountType) : UserMestreModel | UserPersonagemModel | null
+    static private function getUserByEmail($request, $accountType) : UserMestreModel | UserJogadorModel | null
     {
         $database = Database::getTable($accountType);
         
@@ -38,7 +38,7 @@ class Database
     }
 
 
-    static public function getUserByID($request) : UserMestreModel | UserPersonagemModel
+    static public function getUserByID($request) : UserMestreModel | UserJogadorModel
     {
 
         $database = Database::getTable($request);        
@@ -49,7 +49,7 @@ class Database
         return $user;
     }
 
-    static public function getUserByEmailAndPassword($request, $accountType) : UserMestreModel | UserPersonagemModel
+    static public function getUserByEmailAndPassword($request, $accountType) : UserMestreModel | UserJogadorModel
     {
         $database = Database::getTable($accountType);
         
@@ -103,7 +103,7 @@ class Database
                 break;
             
             case 'jogador':
-                    return new UserPersonagemModel();
+                    return new UserJogadorModel();
                 break;    
 
             default:
