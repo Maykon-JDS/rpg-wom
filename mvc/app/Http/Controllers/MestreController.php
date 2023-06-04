@@ -5,8 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Classes\Session;
 use App\Classes\Database;
-use CoffeeCode\Uploader;
-
 
 class MestreController extends Controller
 {
