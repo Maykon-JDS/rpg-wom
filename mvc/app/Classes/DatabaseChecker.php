@@ -2,7 +2,6 @@
 
 namespace App\Classes;
 
-use Exception;
 use App\Exceptions\ExceptionQueryReturnNull;
 use App\Exceptions\ExceptionEmailAlreadyCasdastred;
 

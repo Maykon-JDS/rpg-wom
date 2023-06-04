@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Classes;
-use App\Classes\Account;
 
 class Session
 {

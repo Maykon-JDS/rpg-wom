@@ -5,7 +5,6 @@ namespace App\Classes;
 use App\Exceptions\ExceptionAccountAlreadyConnected;
 use App\Exceptions\ExceptionNoAccountConnected;
 use App\Exceptions\ExceptionAccountType;
-use Exception;
 
 class SessionChecker
 {
